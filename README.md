@@ -272,7 +272,7 @@ for col in colnames:
 ![image](https://github.com/user-attachments/assets/c49e0c25-d81f-4bb8-aea7-9403b7d0bcc4)
 ![image](https://github.com/user-attachments/assets/d99245f4-a009-4f26-8d0f-5f9f78e2881e)
 ![image](https://github.com/user-attachments/assets/2bc87bd6-df7a-4005-aaca-439ed4a9a90f)
-``` python
+```python
 # Define a list of colors to be used for the segments in the treemap.
 colors = ['#FF0000', '#00FFFF', '#FFFF00', '#A52A2A', '#800080', '#FF00CB', '#FFA500', '#FF00FF', '#736F6E']
 
@@ -297,7 +297,7 @@ plt.axis('off')
 plt.show()
 ```
 ![image](https://github.com/user-attachments/assets/a2208dc8-ff6d-4fdf-9d78-11ddb1217075)
-```pyhthon
+```python
 # Define a list of colors to be used for the segments in the treemap.
 colors = ['#FF0000', '#00FFFF', '#FFFF00', '#A52A2A', '#800080', '#FF00CB', '#FFA500', '#FF00FF', '#736F6E']
 
