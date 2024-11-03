@@ -54,7 +54,7 @@ Implementation of quintile-based scoring system:
 - Improved customer lifetime value
 - Enhanced customer loyalty
 - Data-driven decision making for future campaigns
-## Exploring Data
+## Exploring the Dataset
 ### Cleaning Data 
 ```python
 # Display general information about the dataframe, including non-null counts and data types
