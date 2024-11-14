@@ -37,7 +37,6 @@ Implementation of quintile-based scoring system:
 - Improved customer lifetime value
 - Enhanced customer loyalty
 - Data-driven decision making for future campaigns
-## Exploring the Dataset
 ## Dataset Description
 This is a transnational data set which contains all the transactions occurring between 01/12/2010 and 09/12/2011 for a UK-based and registered non-store online retail. Reference date for Recency calculation: December 31, 2011. The company mainly sells unique all-occasion gifts. Many customers of the company are wholesalers. The analysis uses the following fields:
   
@@ -55,6 +54,7 @@ This is a transnational data set which contains all the transactions occurring b
 - Pandas for data manipulation
 - NumPy for numerical computations
 - Matplotlib/Seaborn for visualization
+## Exploring the Dataset
 ### Cleaning Data 
 ```python
 # Display general information about the dataframe, including non-null counts and data types
