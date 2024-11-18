@@ -19,12 +19,34 @@ Implementation of quintile-based scoring system:
 ### Visualization & Analysis
 - Distribution of Recency, Frequency, Monetary 
 - Customer segment distribution visualization of Customer Count, Customer Revenue
-## Bussiness vommendation
+## Bussiness value
+### Immediate Benefits
+#### Marketing Efficiency
+- Targeted campaigns based on customer segments
+- Reduced marketing costs through precise targeting
+- Higher conversion rates from personalized approaches
+#### Customer Insights
+- Clear identification of VIP customers
+- Early detection of churning customers
+- Recognition of potential high-value customers
+#### Revenue Optimization
+- Focused retention strategies for valuable segments
+- Customized promotions for each customer group
+- Better resource allocation for marketing campaigns
+### Long-term Impact
+- Improved customer lifetime value
+- Enhanced customer loyalty
+- Data-driven decision making for future campaigns
+## Dataset Description
+This is a transnational data set which contains all the transactions occurring between 01/12/2010 and 09/12/2011 for a UK-based and registered non-store online retail. Reference date for Recency calculation: December 31, 2011. The company mainly sells unique all-occasion gifts. Many customers of the company are wholesalers. The analysis uses the following fields:
+  
+| Field        | Explanation                                                                                              |
+|--------------|----------------------------------------------------------------------------------------------------------|
+| InvoiceNo    | Invoice number. Nominal, a 6-digit integral number uniquely assigned to each transaction. If this code starts with the letter 'C', it indicates a carecommendation 
 ### General recommendation 
 ![image](https://github.com/user-attachments/assets/778384e0-d99d-4915-959b-9da8c5f61cc8)
 ### Detailed recommendation for each segment 
 ![image](https://github.com/user-attachments/assets/bfe5753c-a86e-4f8f-a0de-c18a12767b1a)
-
 In conclusion, the business is performing well in retaining the Champions group – the most important customer segment. However, there is a need to improve strategies for other segments to optimize revenue. Key segments to focus on include:
 - Champions (19.13% of customers, 62.65% of revenue): This is the most loyal and highest value customer group.
 - Loyal (9.98% of customers, 11.70% of revenue): This group also holds high value and has the potential to become Champions with proper care.
