@@ -24,6 +24,7 @@ Implementation of quintile-based scoring system:
 ![image](https://github.com/user-attachments/assets/778384e0-d99d-4915-959b-9da8c5f61cc8)
 ### Detailed recommendation for each segment 
 ![image](https://github.com/user-attachments/assets/bfe5753c-a86e-4f8f-a0de-c18a12767b1a)
+
 In conclusion, the business is performing well in retaining the Champions group – the most important customer segment. However, there is a need to improve strategies for other segments to optimize revenue. Key segments to focus on include:
 - Champions (19.13% of customers, 62.65% of revenue): This is the most loyal and highest value customer group.
 - Loyal (9.98% of customers, 11.70% of revenue): This group also holds high value and has the potential to become Champions with proper care.
