@@ -39,17 +39,7 @@ Implementation of quintile-based scoring system:
 - Data-driven decision making for future campaigns
 ## Dataset Description
 This is a transnational data set which contains all the transactions occurring between 01/12/2010 and 09/12/2011 for a UK-based and registered non-store online retail. Reference date for Recency calculation: December 31, 2011. The company mainly sells unique all-occasion gifts. Many customers of the company are wholesalers. The analysis uses the following fields:
-  
-| Field        | Explanation                                                                                              |
-|--------------|----------------------------------------------------------------------------------------------------------|
-| InvoiceNo    | Invoice number. Nominal, a 6-digit integral number uniquely assigned to each transaction. If this code starts with the letter 'C', it indicates a cancellation. |
-| StockCode    | Product (item) code. Nominal, a 5-digit integral number uniquely assigned to each distinct product.      |
-| Description  | Product (item) name. Nominal.                                                                            |
-| Quantity     | The quantities of each product (item) per transaction. Numeric.                                         |
-| InvoiceDate  | Invoice Date and time. Numeric, the day and time when each transaction was generated.                   |
-| UnitPrice    | Unit price. Numeric, product price per unit in sterling.                                               |
-| CustomerID   | Customer number. Nominal, a 5-digit integral number uniquely assigned to each customer.                  |
-| Country      | Country name. Nominal, the name of the country where each customer resides.                             |
+![image](https://github.com/user-attachments/assets/59f4a4b3-fa74-4598-ad26-a3b35e4ab12e)
 ## Technical Implementation
 - Pandas for data manipulation
 - NumPy for numerical computations
