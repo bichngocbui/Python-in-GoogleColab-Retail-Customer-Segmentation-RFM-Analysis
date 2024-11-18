@@ -233,6 +233,7 @@ plt.axis('off')
 plt.show()
 ```
 ![image](https://github.com/user-attachments/assets/1e1c4a0d-165d-414e-a9c7-9660ba79985c)
+Here are some detailed recommendation for each segement:
 #### Champion 
 ##### Insight
 Customers frequently return to purchase within 1-2 months with very high frequency. They spend significantly, contributing greatly to revenue, and are the most loyal and valuable customers.
