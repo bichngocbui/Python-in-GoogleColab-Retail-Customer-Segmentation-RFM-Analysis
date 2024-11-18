@@ -148,7 +148,7 @@ grp
 ```
 ![image](https://github.com/user-attachments/assets/c1816772-42ad-4745-b52d-fcaa6d108d2a)
 
-### Visualization
+### Visualization & Recommendation 
 ```python
 # Define a list of column names to analyze the distribution of.
 colnames = ['Recency', 'Frequency', 'Monetary']
@@ -168,8 +168,31 @@ for col in colnames:
     plt.show()
 ```
 ![image](https://github.com/user-attachments/assets/c49e0c25-d81f-4bb8-aea7-9403b7d0bcc4)
+#### Insight
+- The peak distribution from 20-25 days indicates that customers typically return to make purchases after 1-2 months.
+- Most customers have transacted in the last 3-4 months.
+- A small number of customers have not transacted for more than 6 months to over a year.
+#### Action 
+- Retain frequent customers: For customers who purchase every 1-2 months, maintain engagement through regular promotional programs and newsletters about new products.
+- Reactivate low-frequency customers: For those who haven’t purchased in over 6 months, implement special campaigns such as personalized offers and exclusive promotions to encourage them to return.
+- Closely monitor customers nearing their buying cycle: Establish channels to remind customers of new offers or products of interest as they approach 1-2 months without a purchase.
 ![image](https://github.com/user-attachments/assets/d99245f4-a009-4f26-8d0f-5f9f78e2881e)
+#### Insight
+- Strong right skew, with most customers making fewer than 50 purchases.
+- The peak distribution is close to 0, indicating that most customers only purchase 1-2 times.
+- A small number of customers have high purchase frequency (over 150 times).
+#### Action 
+- Increase purchase frequency for low-frequency customers: Utilize remarketing strategies or provide incentives for the next purchase immediately after the first transaction to encourage customers to return.
+- Loyalty programs: For customers who have purchased more than 1-2 times, develop point accumulation or discounts for future purchases to increase shopping frequency.
+- Maintain high-frequency customers: Create special programs or personalized service packages for customers with high purchase frequency to ensure their continued loyalty to the brand.
 ![image](https://github.com/user-attachments/assets/2bc87bd6-df7a-4005-aaca-439ed4a9a90f)
+### Insight 
+- Strong right skew, with most customers having low spending values.
+- A small number of customers have extremely high spending values (up to 250,000 currency units).
+#### Action 
+- Upsell and cross-sell: For customers with low spending value, the business should enhance the introduction of related products (cross-sell) or higher-end versions of products they are purchasing (upsell).
+- Increase average order value: Use strategies like "combo," "buy more save more," or "free shipping on orders above a certain amount" to encourage customers to spend more per order.
+- Special care for high-value customers: For customers with high spending value, establish VIP offers, invite them to events, or offer experiences with new products to increase engagement and maintain high consumption levels.
 ```python
 # Define a list of colors to be used for the segments in the treemap.
 colors = ['#FF0000', '#00FFFF', '#FFFF00', '#A52A2A', '#800080', '#FF00CB', '#FFA500', '#FF00FF', '#736F6E']
@@ -210,12 +233,76 @@ plt.axis('off')
 plt.show()
 ```
 ![image](https://github.com/user-attachments/assets/1e1c4a0d-165d-414e-a9c7-9660ba79985c)
-## Insight & Recommendatiom
-### General recommendation 
-![image](https://github.com/user-attachments/assets/778384e0-d99d-4915-959b-9da8c5f61cc8)
-### Detailed recommendation for each segment 
-![image](https://github.com/user-attachments/assets/bfe5753c-a86e-4f8f-a0de-c18a12767b1a)
-In conclusion, the business is performing well in retaining the Champions group – the most important customer segment. However, there is a need to improve strategies for other segments to optimize revenue. Key segments to focus on include:
+#### Champion 
+##### Insight
+Customers frequently return to purchase within 1-2 months with very high frequency. They spend significantly, contributing greatly to revenue, and are the most loyal and valuable customers.
+##### Recommendation
+- Maintain engagement: Provide regular promotional programs and newsletters about new products
+- Loyalty program: Reward points for the next transaction
+- VIP care: Create VIP offers, invite to events, or new product experiences to retain high-value customers.
+#### Loyal
+##### Insight
+Customers frequently return in the last 3-4 months, with a relatively high purchase frequency but not as high as Champions. They spend an average amount and have potential to become premium customers with proper care.
+##### Recommendation
+- Encourage through appreciation programs: Send promotions based on purchase history.
+- Loyalty program: Apply discount policies for the next purchase to maintain purchasing frequency.
+#### Potential Loyalist
+##### Insight
+Customers with the potential to become loyal, have purchased in the last 3-4 months, but their purchase frequency and value are still low. They show signs of buying more but are not stable yet.
+##### Recommendation
+- Care to become loyal customers: Provide suitable offers, product suggestions, and promotions to increase purchase frequency.
+- Combo policy: Encourage more purchases with combo packs or discounts for bulk buying to increase order value.
+#### Promising
+##### Insight
+Potential customers who have purchased recently but have low purchase frequency and value. They can develop into loyal customers with proper care.
+##### Recommendation
+- Build loyalty: Use remarketing campaigns with discount codes for their next purchase right after their first transaction.
+- Encourage additional purchases: Increase purchase frequency with special offers for the next purchase or loyalty programs.
+#### New Customers
+##### Insight
+New customers who typically purchase 1-2 times with low purchase value. They may return in the future if encouraged and cared for properly.
+##### Recommendation
+- Encourage the next purchase: Provide welcome offers or discounts for their next purchase to encourage them to return.
+- Product introduction: Suggest similar or popular products to increase the chances of additional purchases.
+#### Need Attention
+##### Insight
+Customers who used to purchase frequently but have decreased frequency in the last 3-6 months. They still spend considerably but show signs of decline and need attention to retain.
+##### Recommendation
+- Reactivate customers: Send personalized promotional programs or offers to capture their attention.
+- Encourage return: Create remarketing campaigns or announce new products to entice them to continue shopping.
+#### At Risk
+##### Insight
+Customers who have stopped purchasing for over 6 months. They previously had high purchase frequency and value but are now declining. This group is at high risk of switching to other brands without timely care.
+##### Recommendation
+- Special retention strategies: Provide personalized offers or significant discounts to encourage their return.
+- Win-back program: Create special campaigns with attractive offers targeted at customers to return after a period of inactivity.
+#### Hibernating Customers
+##### Insight
+Customers who have not purchased for a very long time, nearly ceasing transactions. They have low purchase value and contribute little to revenue.
+##### Recommendation
+- Reactivation through win-back campaigns: Send marketing campaigns with significant promotions, special offers, or incentives to encourage customers to return to shopping.
+- Analyze reasons for loss: Understand why they stopped purchasing and adjust strategies accordingly.
+#### Cannot Lose Them
+##### Insight
+A crucial group of customers with high purchase value, but currently have reduced purchasing frequency. This group needs priority care to avoid total loss.
+##### Recommendation
+- Retain with personalized programs: Provide special offers, VIP programs, or personalized care to ensure they return to shopping.
+- Priority outreach: Create remarketing campaigns or product experience campaigns to capture their attention.
+#### Lost Customers
+##### Insight
+Customers who have stopped transactions for a long time, indicating they are no longer interested in the products/services. These customers have very low purchase value and frequency. Losing these customers can negatively impact the company's revenue.
+##### Recommendation
+- Assess reasons for loss: Conduct surveys to understand why they did not return to shopping and their dissatisfaction points.
+- Win-back program: Establish reactivation programs by offering attractive incentives, discounts, or free products for the first purchase upon return.
+- Monitor effectiveness: Track reactivation campaigns to assess effectiveness and adjust as necessary.
+#### About to Sleep
+##### Insight
+Customers showing signs of stopping shopping, with the recent return period extending beyond normal (nearly 6 months). They have low purchase frequency and value. This group is at risk of leaving the brand but can still recover if approached correctly.
+##### Recommendation
+- Quick reconnection: Send personalized offers to remind them of new products or special promotions.
+- Encourage return: Create remarketing campaigns or provide significant offers to entice them to return to shopping before they transition to a higher risk group or are completely lost.
+- Monitor: Track their behavior to implement appropriate retention strategies.
+#### In conclusion, the business is performing well in retaining the Champions group – the most important customer segment. However, there is a need to improve strategies for other segments to optimize revenue. Key segments to focus on include:
 - Champions (19.13% of customers, 62.65% of revenue): This is the most loyal and highest value customer group.
 - Loyal (9.98% of customers, 11.70% of revenue): This group also holds high value and has the potential to become Champions with proper care.
 - At Risk (9.77% of customers, 8.45% of revenue): This group is at risk of leaving the business but still contributes significantly to revenue.
