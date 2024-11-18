@@ -87,7 +87,7 @@ rfm = ecommerce_retail.groupby('CustomerID').agg({
 # Display the RFM table
 rfm
 ```
-![image](https://github.com/user-attachments/assets/43bfbac8-0ae0-4820-b94b-d48138de0d3d)
+![image](https://github.com/user-attachments/assets/a603f396-ae35-45d7-87ea-dcbe2542a689)
 
 ```python
 # Create a Recency score (R_score) by dividing Recency values into 5 quantiles
@@ -105,7 +105,7 @@ rfm['RFM_score'] = rfm['R_score'].astype(str) + rfm['F_score'].astype(str) + rfm
 # Display the RFM table with the new scores
 rfm
 ```
-![image](https://github.com/user-attachments/assets/f86610f2-58cc-4ad6-82ed-389057e0d858)
+![image](https://github.com/user-attachments/assets/f8335899-3405-4166-a5f4-170907a5eddf)
 
 ```python
 # Convert the 'RFM Score' column to string type to facilitate string operations
@@ -118,7 +118,7 @@ seg = seg.explode('RFM Score').reset_index(drop=True).rename(columns={'RFM Score
 # Display the segmented data with the new RFM_score column
 seg
 ```
-![image](https://github.com/user-attachments/assets/ea8526a5-aafe-4818-9f75-a13fe75792ef)
+![image](https://github.com/user-attachments/assets/32e6578e-6a18-4479-9c15-5febf3bf020a)
 
 ```python
 # Remove any leading or trailing whitespace characters from the 'RFM_score' column in both rfm and seg DataFrames
@@ -130,7 +130,7 @@ joined = rfm.merge(seg, on='RFM_score', how='left')
 # Display the merged DataFrame containing RFM scores along with their corresponding segments
 joined
 ```
-![image](https://github.com/user-attachments/assets/71af5f04-d1f1-434e-b806-3daf719bf575)
+![image](https://github.com/user-attachments/assets/da807937-019c-43f6-92ef-e98e1b22bb65)
 
 ```python
 # Group the joined DataFrame by 'Segment' and count the number of unique customers
@@ -146,7 +146,7 @@ grp['Revenue_share'] = grp['Revenue'] / joined['Monetary'].sum()
 # Display the grouped DataFrame with segments, customer counts, and revenue shares
 grp
 ```
-![image](https://github.com/user-attachments/assets/f63b9c6a-c9dd-47f6-bce3-db60bd78d865)
+![image](https://github.com/user-attachments/assets/c1816772-42ad-4745-b52d-fcaa6d108d2a)
 
 ### Visualization
 ```python
