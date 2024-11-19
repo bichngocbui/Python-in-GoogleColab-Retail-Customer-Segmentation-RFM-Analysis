@@ -1,4 +1,4 @@
-# Python-RFM-Analysis-and-Customer-Segmentation-Visualization
+#  Python - Google Colab - Retail Customer Segmentation: RFM Analysis
 ## Project Overview
 This project implements a comprehensive RFM (Recency, Frequency, Monetary) analysis system for SuperStore's global retail operations. The analysis aims to support the Marketing team's customer segmentation efforts for their year-end marketing campaigns, transitioning from manual Excel-based analysis to an automated Python solution due to increased data volume.
 ## Business Context
